@@ -83,9 +83,7 @@ while(True):
             print('Color: ', rgb)
             data = rgb + [area]
             write_col_x(data)
-            write_col_y('9')
-        # area = cv2.contourArea(contours[0])
-        # cv2.drawContours(image, contours, -1, (0,255,0), 2)
+            write_col_y('0')
     cv2.imshow("objects Found", image)
     cv2.imshow('Thresh', thresh)
     time.sleep(0.01)
