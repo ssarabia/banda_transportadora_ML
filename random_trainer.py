@@ -11,13 +11,6 @@ def write_col_x(row):
                                 quotechar='|', quoting=csv.QUOTE_MINIMAL)
         spamwriter.writerow(row)
 
-# Write columns in the y_values_csv
-# Format [y:Int]
-# The values of y correspond to a label
-# 0 = chocorramo, 1 = jet_azul, 2 = jumbo_flow_blanca, 3 = jumbo_naranja, 4 = jumbo_roja
-# 5 = fruna_verde, 6 = fruna_naranja, 7 = fruna_roja, 8 = fruna_amarilla
-#Nuber of tests: 0 = 27; 1 = 31; 2 = 30; 3 = 38; 4 = 33; 5 = 30; 6 = 30; 7 = 30; 8 = 30; 9 = 30
-
 def write_col_y(label):
     with open('dataset/train_y.csv', 'a', newline='') as csvfile:
         spamwriter = csv.writer(csvfile, delimiter=' ',
